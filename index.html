@@ -34,7 +34,7 @@
     </header>
 
     <!-- Hero Section -->
-    <section id="home" class="bg-[url('Images/Home.svg')] bg-cover bg-center bg-no-repeat flex flex-col items-center min-h-screen pt-[84px] px-[70px] scroll-mt-[84px]">
+    <section id="home" class="flex flex-col bg-[url('Images/Home.svg')] bg-cover bg-center bg-no-repeat items-center min-h-screen pt-[84px] px-[70px] scroll-mt-[84px]">
 
         <div class="font-[MagicRetro] mt-[61px] text-[28px] sm:text-[36px] md:text-[48px] lg:text-[63.89px]">
             hi there, it's
@@ -45,20 +45,25 @@
         </div>
 
         <div class="text-center">
-            <button class="w-[211px] mt-[40px] px-[29px] py-[10px] text-[18px] text-[#F7EFDA] font-[600] rounded-[40px] bg-[#738942] border-[2px] border-[#738942] duration-300 ease-linear hover:text-[#644737] hover:bg-[#F7EFDA] hover:border-[#644737]">
+            <a
+                href="#contact"
+                class="inline-block w-[211px] mt-[40px] px-[29px] py-[10px] text-[18px] text-[#F7EFDA] font-[600] rounded-[40px] bg-[#738942] border-[2px] border-[#738942] duration-300 ease-linear hover:text-[#644737] hover:bg-[#F7EFDA] hover:border-[#644737] text-center"
+            >
                 Contact Me
-            </button>
+            </a>
         </div>
 
     </section>
 
-    <section id="contact" class="container mx-auto min-h-screen flex flex-col pt-[84px] scroll-mt-[84px] px-[70px] text-[#644737]">
+    <!-- Contact Section -->
+
+    <section id="contact" class="bg-[url('Images/FrameContact.svg')] bg-center bg-no-repeat mx-auto min-h-screen flex flex-col pt-[84px] scroll-m-0 px-[70px] text-[#644737]">
 
         <div class="mt-[20px] mx-auto">
             <img src="Images/Contact Me.svg" alt="ContactImage">
         </div>
 
-        <form class="mt-[40px] w-full max-w-[576px] lg:max-w-xl mx-auto" id='contact-form' method='POST' name='contact'>
+        <form class="mt-[40px] w-full max-w-[505px] mx-auto" id='contact-form' method='POST' name='contact'>
 
             <input type="hidden" name="form-name" value="contact" />
 
@@ -68,7 +73,7 @@
                 name="name"
                 type="text"
                 placeholder="Your Name"
-                class="w-full px-[15px] py-[15px] rounded-[20px] border-[2px] border-[#738942] bg-[#F7EFDA] focus:outline-none focus:border-[#644737]"
+                class="h-[41px] w-full px-[15px] py-[15px] rounded-[10px] border-[2px] border-[#738942] bg-[#F7EFDA] focus:outline-none focus:border-[#644737]"
                 required
             />
             </div>
@@ -79,7 +84,7 @@
                 type="email"
                 name="email"
                 placeholder="Your Email"
-                class="w-full px-[15px] py-[15px] rounded-[20px] border-[2px] border-[#738942] bg-[#F7EFDA] focus:outline-none focus:border-[#644737]"
+                class="h-[41px] w-full px-[15px] py-[15px] rounded-[10px] border-[2px] border-[#738942] bg-[#F7EFDA] focus:outline-none focus:border-[#644737]"
                 required
             />
             </div>
@@ -90,13 +95,13 @@
                 name="message"
                 rows="4"
                 placeholder="Your Message"
-                class="w-full px-[15px] py-[15px] rounded-[20px] border-[2px] border-[#738942] bg-[#F7EFDA] focus:outline-none focus:border-[#644737]"
+                class="min-h-[185px] max-h-[185px] w-full px-[15px] py-[15px] rounded-[10px] border-[2px] border-[#738942] bg-[#F7EFDA] focus:outline-none focus:border-[#644737]"
                 required
             ></textarea>
             </div>
 
             <div class="text-center">
-                <button class="lg:w-[292px] px-[15px] py-[15px] text-[16px] text-[#F7EFDA] font-[600] rounded-[40px] bg-[#738942] border-[2px] border-[#738942] duration-300 ease-linear hover:text-[#644737] hover:bg-[#F7EFDA] hover:border-[#644737]">
+                <button class="lg:w-[292px] h-[41px] text-center text-[16px] text-[#F7EFDA] font-[600] rounded-[40px] bg-[#738942] border-[2px] border-[#738942] duration-300 ease-linear hover:text-[#644737] hover:bg-[#F7EFDA] hover:border-[#644737]">
                     Send Message
                 </button>
             </div>
@@ -105,7 +110,7 @@
 
         <div
             id="form-message"
-            class="border-[2px] border-[#644737] mt-[36px] text-[16px] py-[10px] rounded-[40px] w-full max-w-[504px] mx-auto opacity-0"
+            class="border-[2px] border-[#644737] mt-[40px] text-[16px] font-[600] py-[10px] rounded-[40px] w-full max-w-[504px] mx-auto opacity-0"
             aria-hidden="true"
         ></div>
 
