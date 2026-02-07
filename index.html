@@ -17,7 +17,7 @@
 <body>
     
     <!-- Nav Bar -->
-    <header class="fixed w-full top-0 left-0 h-[84px] px-[70px] backdrop-blur-[10px] flex items-center z-[1000]">
+    <header class="fixed w-full top-0 left-0 backdrop-blur-[10px] flex items-center z-[1000] md:h-[84px] md:px-[160px]">
         
         <a  class="cursor-pointer duration-300 ease-in-out hover:scale-110" href="#logo">
             <img src="Images/RGLogo.svg" alt="logo">
@@ -34,32 +34,32 @@
     </header>
 
     <!-- Hero Section -->
-    <section id="home" class="flex flex-col bg-[url('Images/Home.svg')] bg-cover bg-center bg-no-repeat items-center min-h-screen pt-[84px] px-[70px] scroll-mt-[84px]">
+    <section id="home" class="flex flex-col bg-[url('Images/HomeBG.svg')] bg-cover bg-center bg-no-repeat items-center min-h-screen pt-[84px] px-[70px] scroll-mt-[84px]">
 
-        <div class="font-[MagicRetro] mt-[61px] text-[28px] sm:text-[36px] md:text-[48px] lg:text-[63.89px]">
+        <div class="font-[MagicRetro] md:text-[61.37px] md:mt-[91px]">
             hi there, it's
         </div>
 
-        <div class="mt-0 max-w-full h-auto duration-300 ease-in-out hover:scale-105">
-            <img src="Images/Name.svg" alt="">
+        <div class="md:-mt-[22px] duration-300 ease-in-out hover:scale-105">
+            <img class="md:w-[1120px]" src="Images/Name.svg" alt="">
         </div>
 
-        <div class="text-center">
-            <a
-                href="#contact"
-                class="inline-block w-[211px] mt-[40px] px-[29px] py-[10px] text-[18px] text-[#F7EFDA] font-[600] rounded-[40px] bg-[#738942] border-[2px] border-[#738942] duration-300 ease-linear hover:text-[#644737] hover:bg-[#F7EFDA] hover:border-[#644737] text-center"
+        <div class="text-center md:mt-[56px]">
+            <a href="#contact" 
+            class="inline-flex items-center justify-center rounded-full text-[10px] px-[19px] py-[6px] md:text-lg md:px-8 md:py-3 text-[#F7EFDA] font-bold bg-[#738942] border-[2px] border-[#738942] duration-300 ease-linear hover:text-[#644737] hover:bg-[#F7EFDA] hover:border-[#644737] text-center"
             >
                 Contact Me
             </a>
         </div>
 
+
     </section>
 
     <!-- Contact Section -->
 
-    <section id="contact" class="bg-[url('Images/FrameContact.svg')] bg-center bg-no-repeat mx-auto min-h-screen flex flex-col pt-[84px] scroll-m-0 px-[70px] text-[#644737]">
+    <section id="contact" class="mx-auto min-h-screen flex flex-col pt-[84px] scroll-m-0 px-[70px] text-[#644737]">
 
-        <div class="mt-[20px] mx-auto">
+        <div class="mt-[10px] mx-auto">
             <img src="Images/Contact Me.svg" alt="ContactImage">
         </div>
 
@@ -73,6 +73,17 @@
                 name="name"
                 type="text"
                 placeholder="Your Name"
+                class="h-[41px] w-full px-[15px] py-[15px] rounded-[10px] border-[2px] border-[#738942] bg-[#F7EFDA] focus:outline-none focus:border-[#644737]"
+                required
+            />
+            </div>
+
+            <div class="mb-[20px]">
+            <input
+                id="form-field"
+                name="tel"
+                type="tel"
+                placeholder="Contact No."
                 class="h-[41px] w-full px-[15px] py-[15px] rounded-[10px] border-[2px] border-[#738942] bg-[#F7EFDA] focus:outline-none focus:border-[#644737]"
                 required
             />
@@ -95,7 +106,7 @@
                 name="message"
                 rows="4"
                 placeholder="Your Message"
-                class="min-h-[185px] max-h-[185px] w-full px-[15px] py-[15px] rounded-[10px] border-[2px] border-[#738942] bg-[#F7EFDA] focus:outline-none focus:border-[#644737]"
+                class="min-h-[150px] max-h-[150px] w-full px-[15px] py-[15px] rounded-[10px] border-[2px] border-[#738942] bg-[#F7EFDA] focus:outline-none focus:border-[#644737]"
                 required
             ></textarea>
             </div>
@@ -110,7 +121,7 @@
 
         <div
             id="form-message"
-            class="border-[2px] border-[#644737] mt-[40px] text-[16px] font-[600] py-[10px] rounded-[40px] w-full max-w-[504px] mx-auto opacity-0"
+            class="border-[2px] border-[#644737] mt-[25px] text-[16px] font-[600] py-[10px] rounded-[40px] w-full max-w-[504px] mx-auto opacity-0"
             aria-hidden="true"
         ></div>
     </section>

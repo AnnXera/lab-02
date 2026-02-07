@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submissions</title>
+
+    <link rel="stylesheet" href="main.css">
+
+    <script src="script.js"></script>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="icon" type="image/png" href="Images/Icon.svg">
+
+</head>
+
+<body>
+
+    <section class="flex flex-col p-[24px] md:px-[70px] w-full mx-auto">
+
+        <div class="mx-auto mb-[20px]">
+            <img src="Images/MessageLog.svg" alt="">
+        </div>
+        
+        <div class="bg-white rounded-[10px] overflow-hidden shadow border border-[#738942]">
+            
+            <table class="w-full border-collapse md:border-collapse">
+                <thead class="hidden md:table-header-group bg-[#738942] text-white">
+                    <tr>
+                        <th class="p-4 text-left">Name</th>
+                        <th class="p-4 text-left">Contact</th>
+                        <th class="p-4 text-left">Email</th>
+                        <th class="p-4 text-left">Message</th>
+                    </tr>
+                </thead>
+
+                <tbody id="submissions-list" class="block md:table-row-group md:align-top bg-white divide-y divide-gray-300"></tbody>
+            </table>
+
+            <div id="empty-state" class="hidden py-20 text-center">
+                <p class="text-gray-400 italic font-medium">Your inbox is currently empty.</p>
+            </div>
+        </div>
+    </section>
+
+
+</body>
+</html>

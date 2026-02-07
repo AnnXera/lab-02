@@ -44,18 +44,37 @@ document.addEventListener('DOMContentLoaded', () => {
         const list = document.getElementById('submissions-list');
         const data = JSON.parse(localStorage.getItem('contact_submissions')) || [];
 
+        const empty = document.getElementById('empty-state');
         if (data.length === 0) {
-            const empty = document.getElementById('empty-state');
             if (empty) empty.classList.remove('hidden');
             return;
+        } else {
+            if (empty) empty.classList.add('hidden');
         }
 
         list.innerHTML = data.reverse().map(entry => `
-            <tr class="border-b border-gray-100">
-                <td class="px-6 py-4 text-xs font-mono text-gray-400">${entry.submittedAt}</td>
-                <td class="px-6 py-4 font-bold text-gray-800">${entry.name}</td>
-                <td class="px-6 py-4 text-blue-600">${entry.email}</td>
-                <td class="px-6 py-4 text-gray-600">${entry.message}</td>
+            <tr class="block px-[20px] md:table-row bg-white">
+
+                <!-- Name -->
+                <td class="block font-semibold justify-start text-gray-900 md:table-cell text-lg pt-[20px] pb-2 md:p-4 md:text-base">
+                    ${entry.name}
+                </td>
+
+                <!-- Contact + Email -->
+                <td class="block text-sm text-gray-700 md:table-cell md:p-4 md:text-base">
+                    <span class="md:hidden">${entry.tel} • ${entry.email}</span>
+                    <span class="hidden md:inline">${entry.tel}</span>
+                </td>
+
+                <!-- Email column hidden on mobile -->
+                <td class="hidden md:table-cell md:p-4 text-gray-700 break-all md:text-base">
+                    ${entry.email}
+                </td>
+
+                <!-- Message -->
+                <td class="block text-gray-700 my-[20px] overflow-auto max-h-[300px] md:table-cell md:p-4 md:overflow-y-auto md:mt-0 md:max-w-[500px]">
+                    ${entry.message}
+                </td>
             </tr>
         `).join('');
     }
