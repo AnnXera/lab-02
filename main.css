@@ -31,3 +31,7 @@ body {
 html {
   scroll-behavior: smooth;
 }
+
+.hero-bg {
+  background-image: url("../Images/HomeBG.svg");
+}

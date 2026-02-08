@@ -17,53 +17,52 @@
 <body>
     
     <!-- Nav Bar -->
-    <header class="fixed w-full top-0 left-0 backdrop-blur-[10px] flex items-center z-[1000] md:h-[84px] md:px-[160px]">
+    <header class="fixed w-full top-0 left-0 backdrop-blur-[10px] flex items-center z-[1000] h-[42px] md:h-[84px] px-[24px] md:px-[160px]">
         
         <a  class="cursor-pointer duration-300 ease-in-out hover:scale-110" href="#logo">
-            <img src="Images/RGLogo.svg" alt="logo">
+            <img class="w-[73px] md:w-[149.14px] h-[23.06px] md:h-[48px]" src="Images/RGLogo.svg" alt="logo">
         </a>
 
-        <nav class="flex ml-auto gap-[37px] text-[18.8px] mx-[37px] font-[700]">
-            <a class="pb-1 border-b-[3px] border-transparent duration-300 hover:border-[#644737] hover:text-[#644737]" href="#home">Home</a>
-            <a class="pb-1 border-b-[3px] border-transparent duration-300 hover:border-[#644737] hover:text-[#644737]" href="#about">About Me</a>
-            <a class="pb-1 border-b-[3px] border-transparent duration-300 hover:border-[#644737] hover:text-[#644737]" href="#skills">Skills</a>
-            <a class="pb-1 border-b-[3px] border-transparent duration-300 hover:border-[#644737] hover:text-[#644737]" href="#projects">Projects</a>
-            <a class="pb-1 border-b-[3px] border-transparent duration-300 hover:border-[#644737] hover:text-[#644737]" href="#contact">Contact</a>
+        <nav class="flex text-[10px] md:text-[18.8px] gap-[18px] md:gap-[37px] ml-auto md:ml-auto md:mx-[37px] font-[700]">
+            <a class=" pb-0 md:pb-1 border-b-[1px] md:border-b-[3px] border-transparent duration-300 hover:border-[#644737] hover:text-[#644737]" href="#home">Home</a>
+            <a class=" pb-0 md:pb-1 border-b-[1px] md:border-b-[3px] border-transparent duration-300 hover:border-[#644737] hover:text-[#644737]" href="#about">About Me</a>
+            <a class=" pb-0 md:pb-1 border-b-[1px] md:border-b-[3px] border-transparent duration-300 hover:border-[#644737] hover:text-[#644737]" href="#skills">Skills</a>
+            <a class=" pb-0 md:pb-1 border-b-[1px] md:border-b-[3px] border-transparent duration-300 hover:border-[#644737] hover:text-[#644737]" href="#projects">Projects</a>
+            <a class=" pb-0 md:pb-1 border-b-[1px] md:border-b-[3px] border-transparent duration-300 hover:border-[#644737] hover:text-[#644737]" href="#contact">Contact</a>
         </nav>
 
     </header>
 
     <!-- Hero Section -->
-    <section id="home" class="flex flex-col bg-[url('Images/HomeBG.svg')] bg-cover bg-center bg-no-repeat items-center min-h-screen pt-[84px] px-[70px] scroll-mt-[84px]">
+    <section id="home" class="md:bg-[url('/Images/HomeBG.svg')] bg-cover bg-center bg-no-repeat flex flex-col items-center h-[246px] md:h-[700px] pt-[24px] md:pt-[84px] px-[24px] md:px-[160px] scroll-mt-[84px]">
 
-        <div class="font-[MagicRetro] md:text-[61.37px] md:mt-[91px]">
+        <div class="font-[MagicRetro] text-[20] md:text-[58.74px] mt-[30px] md:mt-[105px]">
             hi there, it's
         </div>
 
-        <div class="md:-mt-[22px] duration-300 ease-in-out hover:scale-105">
-            <img class="md:w-[1120px]" src="Images/Name.svg" alt="">
+        <div class="-mt-[1px] md:-mt-[22px] duration-300 ease-in-out hover:scale-105">
+            <img class="w-[379.83px] md:w-[1105.62px]" src="Images/Name.svg" alt="">
         </div>
 
-        <div class="text-center md:mt-[56px]">
+        <div class="text-center mt-[20px] md:mt-[56px]">
             <a href="#contact" 
-            class="inline-flex items-center justify-center rounded-full text-[10px] px-[19px] py-[6px] md:text-lg md:px-8 md:py-3 text-[#F7EFDA] font-bold bg-[#738942] border-[2px] border-[#738942] duration-300 ease-linear hover:text-[#644737] hover:bg-[#F7EFDA] hover:border-[#644737] text-center"
+            class="inline-flex items-center justify-center rounded-full text-[8px] px-[12.91px] py-[4.08px] md:text-lg md:px-8 md:py-3 text-[#F7EFDA] font-bold bg-[#738942] border-[2px] border-[#738942] duration-300 ease-linear hover:text-[#644737] hover:bg-[#F7EFDA] hover:border-[#644737] text-center"
             >
                 Contact Me
             </a>
         </div>
 
-
     </section>
 
     <!-- Contact Section -->
 
-    <section id="contact" class="mx-auto min-h-screen flex flex-col pt-[84px] scroll-m-0 px-[70px] text-[#644737]">
+    <section id="contact" class="mx-auto flex flex-col min-h-screen pt-[24px] md:pt-[84px] px-[24px] md:px-[160px] scroll-m-0 text-[#644737]">
 
-        <div class="mt-[10px] mx-auto">
+        <div class="mt-[10px] mx-auto w-[157.19px] md:w-[291.09px]">
             <img src="Images/Contact Me.svg" alt="ContactImage">
         </div>
 
-        <form class="mt-[40px] w-full max-w-[505px] mx-auto" id='contact-form' method='POST' name='contact'>
+        <form class="mt-[40px] w-full max-w-[280.5px] md:max-w-[505px] mx-auto" id='contact-form' method='POST' name='contact'>
 
             <input type="hidden" name="form-name" value="contact" />
 
@@ -73,7 +72,7 @@
                 name="name"
                 type="text"
                 placeholder="Your Name"
-                class="h-[41px] w-full px-[15px] py-[15px] rounded-[10px] border-[2px] border-[#738942] bg-[#F7EFDA] focus:outline-none focus:border-[#644737]"
+                class="text-[10px] md:text-[16px] placeholder:text-[10px] md:placeholder:text-[16px] h-[41px] w-full px-[15px] py-[15px] rounded-[10px] border-[2px] border-[#738942] bg-[#F7EFDA] focus:outline-none focus:border-[#644737]"
                 required
             />
             </div>
@@ -84,7 +83,7 @@
                 name="tel"
                 type="tel"
                 placeholder="Contact No."
-                class="h-[41px] w-full px-[15px] py-[15px] rounded-[10px] border-[2px] border-[#738942] bg-[#F7EFDA] focus:outline-none focus:border-[#644737]"
+                class="text-[10px] md:text-[16px] placeholder:text-[10px] md:placeholder:text-[16px] h-[41px] w-full px-[15px] py-[15px] rounded-[10px] border-[2px] border-[#738942] bg-[#F7EFDA] focus:outline-none focus:border-[#644737]"
                 required
             />
             </div>
@@ -95,7 +94,7 @@
                 type="email"
                 name="email"
                 placeholder="Your Email"
-                class="h-[41px] w-full px-[15px] py-[15px] rounded-[10px] border-[2px] border-[#738942] bg-[#F7EFDA] focus:outline-none focus:border-[#644737]"
+                class="text-[10px] md:text-[16px] placeholder:text-[10px] md:placeholder:text-[16px] h-[41px] w-full px-[15px] py-[15px] rounded-[10px] border-[2px] border-[#738942] bg-[#F7EFDA] focus:outline-none focus:border-[#644737]"
                 required
             />
             </div>
@@ -106,7 +105,7 @@
                 name="message"
                 rows="4"
                 placeholder="Your Message"
-                class="min-h-[150px] max-h-[150px] w-full px-[15px] py-[15px] rounded-[10px] border-[2px] border-[#738942] bg-[#F7EFDA] focus:outline-none focus:border-[#644737]"
+                class="text-[10px] md:text-[16px] placeholder:text-[10px] md:placeholder:text-[16px] min-h-[150px] max-h-[150px] w-full px-[15px] py-[15px] rounded-[10px] border-[2px] border-[#738942] bg-[#F7EFDA] focus:outline-none focus:border-[#644737]"
                 required
             ></textarea>
             </div>
@@ -121,7 +120,7 @@
 
         <div
             id="form-message"
-            class="border-[2px] border-[#644737] mt-[25px] text-[16px] font-[600] py-[10px] rounded-[40px] w-full max-w-[504px] mx-auto opacity-0"
+            class="border-[2px] border-[#644737] mt-[25px] text:-[8.89px] md:text-[16px] font-[600] py-[8.33px] md:py-[10px] rounded-[40px] w-full max-w-[504px] mx-auto opacity-0"
             aria-hidden="true"
         ></div>
     </section>
